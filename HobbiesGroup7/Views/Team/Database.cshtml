@@ -11,17 +11,20 @@
             <td>Hobby</td>
             <td>HobbyDescription</td>
         </tr>
-        <tr>
-            @{
-                foreach (var Data in Model)
-                {
+
+        @{
+            foreach (var Data in Model)
+            {
+                <tr>
                     <td>@Data.TeamMemberId</td>
                     <td>@Data.Name</td>
                     <td>@Data.Bio</td>
                     <td>@Data.HobbyTitle</td>
                     <td>@Data.HobbyDescription</td>
-                }
+
+                </tr>
             }
-        </tr>
-        </table>
+        }
+
+    </table>
     </div>
