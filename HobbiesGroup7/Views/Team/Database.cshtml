@@ -15,9 +15,10 @@
         @{
             foreach (var Data in Model)
             {
+                var position = Data.Name.IndexOf(" ");
                 <tr>
                     <td>@Data.TeamMemberId</td>
-                    <td>@Data.Name</td>
+                    <td><a asp-action="@Data.Name.Substring(0, position)">@Data.Name</a></td>
                     <td>@Data.Bio</td>
                     <td>@Data.HobbyTitle</td>
                     <td>@Data.HobbyDescription</td>
