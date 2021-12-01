@@ -73,3 +73,6 @@ body {
     text-align:center;
     border-color:black;
 }
+.header {
+    font-size: 3rem; font-family: fantasy; font-weight: 300; line-height: 1.2;
+}
