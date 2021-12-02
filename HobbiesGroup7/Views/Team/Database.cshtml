@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Database";
+}
+<div class="text-center;">
+
+    <table class="table table-bordered table-striped">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Bio</td>
+            <td>Hobby</td>
+            <td>HobbyDescription</td>
+        </tr>
+
+        @{
+            foreach (var Data in Model)
+            {
+                var position = Data.Name.IndexOf(" ");
+                <tr>
+                    <td>@Data.TeamMemberId</td>
+                    <td><a asp-action="@Data.Name.Substring(0, position)">@Data.Name</a></td>
+                    <td>@Data.Bio</td>
+                    <td>@Data.HobbyTitle</td>
+                    <td>@Data.HobbyDescription</td>
+
+                </tr>
+            }
+        }
+
+    </table>
+    </div>

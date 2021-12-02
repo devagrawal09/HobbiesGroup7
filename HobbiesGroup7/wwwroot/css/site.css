@@ -73,6 +73,7 @@ body {
     text-align:center;
     border-color:black;
 }
+
 .user {
   display: inline-block;
   width: 150px;
@@ -119,5 +120,10 @@ body {
   height: 654.6px;
   bottom: 0;
   right: 0;
+}
+
+=======
+.header {
+    font-size: 3rem; font-family: fantasy; font-weight: 300; line-height: 1.2;
 }
 

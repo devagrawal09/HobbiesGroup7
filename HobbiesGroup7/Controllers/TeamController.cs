@@ -70,6 +70,11 @@ namespace HobbiesGroup7.Controllers
             FetchData(4);
             return View(team);
         }
+        public IActionResult Database()
+        {
+            FetchData(null);
+            return View(team);
+        }
         public IActionResult Reid()
         {
             FetchData(2);
