@@ -19,7 +19,7 @@ namespace HobbiesGroup7.Migrations
             migrationBuilder.InsertData(
                 table: "Team",
                 columns: new[] { "TeamMemberId", "Bio", "HobbyDescription", "HobbyTitle", "Name" },
-                values: new object[] { 5, "Need to fill out!", "Need to fill out!", "Need to fill out!", "Jacob Gormly" });
+                values: new object[] { 5, "I am a third year student on the software development track. I am a software developer, ride operator, and gamer.", "I have been gaming for a long time. I started playing Halo CE about 12 years ago and have been gaming since.", "Video games and rollercoasters", "Jacob Gormly" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
