@@ -30,6 +30,30 @@ namespace HobbiesGroup7.Models
                 HobbyTitle = "Video Games",
                 HobbyDescription = "I like playing competitive shooters such as Halo, Overwatch, and Valorant."
             });
+            builder.Entity<TeamMember>().HasData(new TeamMember
+            {
+                TeamMemberId = 3,
+                Name = "Blake Warner",
+                Bio = "I am a fourth year student on the software track, aspiring to be an app contractor or UI/UX Specialist",
+                HobbyTitle = "Video Games and sports",
+                HobbyDescription = "My favorite video game is Apex Legends. I watch European soccer whenever it is on and I am huge fan of Arsenal. I do not think I have missed a game in 6 years lol."
+            });
+            builder.Entity<TeamMember>().HasData(new TeamMember
+            {
+                TeamMemberId = 4,
+                Name = "Ben Romig",
+                Bio = "Need to fill out!",
+                HobbyTitle = "Need to fill out!",
+                HobbyDescription = "Need to fill out!"
+            });
+            builder.Entity<TeamMember>().HasData(new TeamMember
+            {
+                TeamMemberId = 5,
+                Name = "Jacob Gormly",
+                Bio = "Need to fill out!",
+                HobbyTitle = "Need to fill out!",
+                HobbyDescription = "Need to fill out!"
+            });
         }
     }
 }
