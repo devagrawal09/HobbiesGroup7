@@ -67,6 +67,7 @@ namespace HobbiesGroup7.Controllers
 
         public IActionResult Ben()
         {
+            FetchData(4);
             return View(team);
         }
         public IActionResult Reid()
@@ -76,6 +77,7 @@ namespace HobbiesGroup7.Controllers
         }
         public IActionResult Jacob()
         {
+            FetchData(5);
             return View(team);
         }
         public IActionResult Dev()
@@ -85,6 +87,7 @@ namespace HobbiesGroup7.Controllers
         }
         public IActionResult Blake()
         {
+            FetchData(3);
             return View(team);
         }
     }

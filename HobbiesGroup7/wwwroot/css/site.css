@@ -73,3 +73,51 @@ body {
     text-align:center;
     border-color:black;
 }
+.user {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: fill;
+}
+.homeName {
+        width:100%;
+        height:20px;
+        text-align:center;
+}
+.navItem {
+  display:inline-block;
+  *display:inline; /*IE7*/
+  *zoom:1; /*IE7*/
+  /* S */
+  color:white;
+  margin-right:10px;
+  color: black;
+}
+.centerList {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodyBackground1 {
+  position: absolute;
+  width: 1048.8px;
+  height: 654.6px;
+  bottom: 0;
+  right: 0;
+}
+.bodyBackground2 {
+  position: absolute;
+  width: 1048.8px;
+  height: 654.6px;
+  bottom: 0;
+  right: 0;
+}
+.bodyBackground3 {
+  position: absolute;
+  width: 1048.8px;
+  height: 654.6px;
+  bottom: 0;
+  right: 0;
+}
+
