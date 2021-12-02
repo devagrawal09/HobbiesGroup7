@@ -127,3 +127,12 @@ body {
     font-size: 3rem; font-family: fantasy; font-weight: 300; line-height: 1.2;
 }
 
+a:link {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: pink;
+}
