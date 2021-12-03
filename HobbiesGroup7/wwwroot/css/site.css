@@ -67,7 +67,8 @@ body {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  line-height: 60px;
+  visibility: hidden; /* Vertically center the text there */
 }
 .member {
     text-align:center;
@@ -128,11 +129,37 @@ body {
 }
 
 a:link {
-    color: blue;
+    color: #6b6b64;
 }
 a:hover {
-    color: red;
+    color: #D8D8D0;
 }
 a:visited {
-    color: pink;
+    color: #c6c6be;
 }
+
+.centerDiv {
+  margin-top: 45%;
+}
+.bodyBackgroundTop1 {
+  position: absolute;
+  width: 1048.8px;
+  height: 654.6px;
+  top: 58px;
+  left: 0;
+}
+.bodyBackgroundTop2 {
+  position: absolute;
+  width: 1048.8px;
+  height: 654.6px;
+  top: 58px;
+  left: 0;
+}
+.bodyBackgroundTop3 {
+  position: absolute;
+  width: 1048.8px;
+  height: 654.6px;
+  top: 58px;
+  left: 0;
+}
+\
