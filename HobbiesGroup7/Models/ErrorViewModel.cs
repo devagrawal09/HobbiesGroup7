@@ -1,5 +1,3 @@
-using System;
-
 namespace HobbiesGroup7.Models
 {
     public class ErrorViewModel
