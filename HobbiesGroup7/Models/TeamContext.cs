@@ -42,9 +42,9 @@ namespace HobbiesGroup7.Models
             {
                 TeamMemberId = 4,
                 Name = "Ben Romig",
-                Bio = "Need to fill out!",
-                HobbyTitle = "Need to fill out!",
-                HobbyDescription = "Need to fill out!"
+                Bio = "I am a 4th year IT student studying Software Development.",
+                HobbyTitle = "Music",
+                HobbyDescription = "I love playing, writing, and listening to music. I play a lot of instruments and love sharing my passion with others. "
             });
             builder.Entity<TeamMember>().HasData(new TeamMember
             {
