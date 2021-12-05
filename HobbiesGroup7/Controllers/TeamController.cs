@@ -15,21 +15,12 @@ namespace HobbiesGroup7.Controllers
         {
             _teamContext = teamContext;
         }
-        private TeamMember FetchData (int? id)
-        {
-            if (id != null) {
-                var member = _teamContext.Team.Find(id);
-                return member;
-            } else {
-                throw new KeyNotFoundException();
-            }
-        }
 
         [HttpGet]
         [Route("Team/{memberId:int}")]
         public IActionResult Index(int memberId)
         {
-            var member = FetchData(memberId);
+            var member = _teamContext.Team.Find(memberId);
             return View(member);
         }
 
