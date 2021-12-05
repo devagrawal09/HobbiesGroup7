@@ -50,9 +50,9 @@ namespace HobbiesGroup7.Models
             {
                 TeamMemberId = 5,
                 Name = "Jacob Gormly",
-                Bio = "Need to fill out!",
-                HobbyTitle = "Need to fill out!",
-                HobbyDescription = "Need to fill out!",
+                Bio = "I am a third year student on the software development track. I am a software developer, ride operator, and gamer.",
+                HobbyTitle = "Video games and rollercoasters",
+                HobbyDescription = "I have been gaming for a long time. I started playing Halo CE about 12 years ago and have been gaming since.",
                 Avatar = "/images/blakesProPic.jpg"
             });
         }
