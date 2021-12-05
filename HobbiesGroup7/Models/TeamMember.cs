@@ -16,5 +16,7 @@ namespace HobbiesGroup7.Models
 
         [Display(Name = "Hobby Description")]
         public string HobbyDescription { get; set; }
+
+        public string Avatar { get; set; }
     }
 }

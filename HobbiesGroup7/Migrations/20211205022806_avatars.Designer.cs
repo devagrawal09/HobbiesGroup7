@@ -3,14 +3,16 @@ using HobbiesGroup7.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HobbiesGroup7.Migrations
 {
     [DbContext(typeof(TeamContext))]
-    partial class TeamContextModelSnapshot : ModelSnapshot
+    [Migration("20211205022806_avatars")]
+    partial class avatars
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,7 +51,7 @@ namespace HobbiesGroup7.Migrations
                         new
                         {
                             TeamMemberId = 1,
-                            Avatar = "/images/homeProPic1.jpg",
+                            Avatar = "~/images/homeProPic1.jpg",
                             Bio = "I am a 4th year IT student and an aspiring software developer/architect.",
                             HobbyDescription = "I like playing rock and metal music on guitar, keyboard and drums.",
                             HobbyTitle = "Music",
@@ -58,7 +60,7 @@ namespace HobbiesGroup7.Migrations
                         new
                         {
                             TeamMemberId = 2,
-                            Avatar = "/images/homeProPic2.jpg",
+                            Avatar = "~/images/homeProPic2.jpg",
                             Bio = "I am a third year student studying IT with a specialization in Software Development",
                             HobbyDescription = "I like playing competitive shooters such as Halo, Overwatch, and Valorant.",
                             HobbyTitle = "Video Games",
@@ -67,7 +69,7 @@ namespace HobbiesGroup7.Migrations
                         new
                         {
                             TeamMemberId = 3,
-                            Avatar = "/images/homeProPic3.jpg",
+                            Avatar = "~/images/homeProPic3.jpg",
                             Bio = "I am a fourth year student on the software track, aspiring to be an app contractor or UI/UX Specialist",
                             HobbyDescription = "My favorite video game is Apex Legends. I watch European soccer whenever it is on and I am huge fan of Arsenal. I do not think I have missed a game in 6 years lol.",
                             HobbyTitle = "Video Games and sports",
@@ -76,7 +78,7 @@ namespace HobbiesGroup7.Migrations
                         new
                         {
                             TeamMemberId = 4,
-                            Avatar = "/images/homeProPic4.jpg",
+                            Avatar = "~/images/homeProPic4.jpg",
                             Bio = "I am a 4th year IT student studying Software Development.",
                             HobbyDescription = "I love playing, writing, and listening to music. I play a lot of instruments and love sharing my passion with others. ",
                             HobbyTitle = "Music",
@@ -85,7 +87,7 @@ namespace HobbiesGroup7.Migrations
                         new
                         {
                             TeamMemberId = 5,
-                            Avatar = "/images/blakesProPic.jpg",
+                            Avatar = "~/images/blakesProPic.jpg",
                             Bio = "Need to fill out!",
                             HobbyDescription = "Need to fill out!",
                             HobbyTitle = "Need to fill out!",

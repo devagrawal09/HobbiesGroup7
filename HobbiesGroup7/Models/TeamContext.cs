@@ -16,7 +16,8 @@ namespace HobbiesGroup7.Models
                 Name = "Dev Agrawal",
                 Bio = "I am a 4th year IT student and an aspiring software developer/architect.",
                 HobbyTitle = "Music",
-                HobbyDescription = "I like playing rock and metal music on guitar, keyboard and drums."
+                HobbyDescription = "I like playing rock and metal music on guitar, keyboard and drums.",
+                Avatar = "/images/homeProPic1.jpg"
             });
             builder.Entity<TeamMember>().HasData(new TeamMember
             {
@@ -24,7 +25,8 @@ namespace HobbiesGroup7.Models
                 Name = "Reid Sweeney",
                 Bio = "I am a third year student studying IT with a specialization in Software Development",
                 HobbyTitle = "Video Games",
-                HobbyDescription = "I like playing competitive shooters such as Halo, Overwatch, and Valorant."
+                HobbyDescription = "I like playing competitive shooters such as Halo, Overwatch, and Valorant.",
+                Avatar = "/images/homeProPic2.jpg"
             });
             builder.Entity<TeamMember>().HasData(new TeamMember
             {
@@ -32,7 +34,8 @@ namespace HobbiesGroup7.Models
                 Name = "Blake Warner",
                 Bio = "I am a fourth year student on the software track, aspiring to be an app contractor or UI/UX Specialist",
                 HobbyTitle = "Video Games and sports",
-                HobbyDescription = "My favorite video game is Apex Legends. I watch European soccer whenever it is on and I am huge fan of Arsenal. I do not think I have missed a game in 6 years lol."
+                HobbyDescription = "My favorite video game is Apex Legends. I watch European soccer whenever it is on and I am huge fan of Arsenal. I do not think I have missed a game in 6 years lol.",
+                Avatar = "/images/homeProPic3.jpg"
             });
             builder.Entity<TeamMember>().HasData(new TeamMember
             {
@@ -40,7 +43,8 @@ namespace HobbiesGroup7.Models
                 Name = "Ben Romig",
                 Bio = "I am a 4th year IT student studying Software Development.",
                 HobbyTitle = "Music",
-                HobbyDescription = "I love playing, writing, and listening to music. I play a lot of instruments and love sharing my passion with others. "
+                HobbyDescription = "I love playing, writing, and listening to music. I play a lot of instruments and love sharing my passion with others. ",
+                Avatar = "/images/homeProPic4.jpg"
             });
             builder.Entity<TeamMember>().HasData(new TeamMember
             {
@@ -48,7 +52,8 @@ namespace HobbiesGroup7.Models
                 Name = "Jacob Gormly",
                 Bio = "Need to fill out!",
                 HobbyTitle = "Need to fill out!",
-                HobbyDescription = "Need to fill out!"
+                HobbyDescription = "Need to fill out!",
+                Avatar = "/images/blakesProPic.jpg"
             });
         }
     }

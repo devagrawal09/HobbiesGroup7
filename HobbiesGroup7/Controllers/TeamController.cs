@@ -9,88 +9,33 @@ namespace HobbiesGroup7.Controllers
 {
     public class TeamController : Controller
     {
-        SqlConnection con = new SqlConnection();
-        SqlCommand com = new SqlCommand();
-        SqlDataReader dr;
-        List<TeamMember> team = new List<TeamMember>();
-        private readonly ILogger<TeamController> _logger;
+        private readonly TeamContext _teamContext;
 
-        public TeamController(ILogger<TeamController> logger)
+        public TeamController(TeamContext teamContext)
         {
-            _logger = logger;
-            con.ConnectionString = "Server=(localdb)\\mssqllocaldb;Database=Team;Trusted_Connection=True;MultipleActiveResultSets=true";
+            _teamContext = teamContext;
         }
-        private void FetchData (int? id)
+        private TeamMember FetchData (int? id)
         {
-            if(team.Count > 0)
-            {
-                team.Clear();
-            }
-            
-            try
-            {
-                con.Open();
-                com.Connection = con;
-                if (id != null)
-                {
-                    var idParamater = new SqlParameter("@id", id);
-                    com.Parameters.Add(idParamater);
-                    com.CommandText = "select * from Team where TeamMemberId = @id;";
-                } else if (id == null)
-                {
-                    com.CommandText = "select * from Team";
-                }
-                
-                dr = com.ExecuteReader();
-                while(dr.Read())
-                {
-                    team.Add(new TeamMember()
-                    {
-                        TeamMemberId = (int)dr["TeamMemberId"],
-                        Name = dr["Name"].ToString(),
-                        Bio = dr["Bio"].ToString(),
-                        HobbyTitle = dr["HobbyTitle"].ToString(),
-                        HobbyDescription = dr["HobbyDescription"].ToString()
-                    });
-                }
-                con.Close();
-            } catch (Exception ex) {
-                throw ex;
+            if (id != null) {
+                var member = _teamContext.Team.Find(id);
+                return member;
+            } else {
+                throw new KeyNotFoundException();
             }
         }
-        public IActionResult Index()
+
+        [HttpGet]
+        [Route("Team/{memberId:int}")]
+        public IActionResult Index(int memberId)
         {
-            return View();
+            var member = FetchData(memberId);
+            return View(member);
         }
 
-        public IActionResult Ben()
-        {
-            FetchData(4);
-            return View(team);
-        }
         public IActionResult Database()
         {
-            FetchData(null);
-            return View(team);
-        }
-        public IActionResult Reid()
-        {
-            FetchData(2);
-            return View(team);
-        }
-        public IActionResult Jacob()
-        {
-            FetchData(5);
-            return View(team);
-        }
-        public IActionResult Dev()
-        {
-            FetchData(1);
-            return View(team);
-        }
-        public IActionResult Blake()
-        {
-            FetchData(3);
+            var team = _teamContext.Team;
             return View(team);
         }
     }

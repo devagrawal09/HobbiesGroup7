@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<TeamMember>
+@{
     ViewData["Title"] = "Home Page";
 }
 <body>
@@ -6,36 +7,22 @@
     <img src="~/images/Vector2.png" class="bodyBackground2">
     <img src="~/images/Vector3.png" class="bodyBackground3">
     <div class="text-center">
-    </div>
-    <div class="text-center">
         <h3>Whose hobbies would you like to find out about?</h3>
         <div>
             <ul class="homeName">
-                <li class="navItem">
-                    <img src="~/images/homeProPic1.jpg" class="user" />
-                    <br>
-                    <a>Reid Sweeney</a>
-                </li>
-                <li class="navItem">
-                    <img src="~/images/homeProPic2.jpg" class="user" />
-                    <br>
-                    <a>Jacob Gormly</a>
-                </li>
-                <li class="navItem">
-                    <img src="~/images/homeProPic3.jpg" class="user" />
-                    <br>
-                    <a>Dev Agrawal</a>
-                </li>
-                <li class="navItem">
-                    <img src="~/images/blakesProPic.jpg" class="user" />
-                    <br>
-                    <a>Blake Warner</a>
-                </li>
-                <li class="navItem">
-                    <img src="~/images/homeProPic4.jpg" class="user" />
-                    <br>
-                    <a>Ben Romig</a>
-                </li>
+                @foreach (var member in Model)
+                {
+                    <a asp-area=""
+                       asp-controller="Team"
+                       asp-action="@member.TeamMemberId"
+                    >
+                        <li class="navItem">
+                            <img src="@member.Avatar" class="user" />
+                            <br>
+                            @member.Name
+                        </li>
+                    </a>
+                }
             </ul>
         </div>
     </div>

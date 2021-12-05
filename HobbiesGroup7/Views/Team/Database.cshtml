@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<TeamMember>
+@{
     ViewData["Title"] = "Database";
 }
 <div class="text-center;">
@@ -18,7 +19,7 @@
                 var position = Data.Name.IndexOf(" ");
                 <tr>
                     <td>@Data.TeamMemberId</td>
-                    <td><a asp-action="@Data.Name.Substring(0, position)">@Data.Name</a></td>
+                    <td><a asp-action="@Data.TeamMemberId">@Data.Name</a></td>
                     <td>@Data.Bio</td>
                     <td>@Data.HobbyTitle</td>
                     <td>@Data.HobbyDescription</td>

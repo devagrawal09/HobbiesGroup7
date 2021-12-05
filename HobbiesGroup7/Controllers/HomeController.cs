@@ -1,22 +1,24 @@
 ﻿using HobbiesGroup7.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace HobbiesGroup7.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly TeamContext _teamContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(TeamContext teamContext)
         {
-            _logger = logger;
+            _teamContext = teamContext;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<TeamMember> team = _teamContext.Team;
+            return View(team);
         }
 
         public IActionResult Privacy()

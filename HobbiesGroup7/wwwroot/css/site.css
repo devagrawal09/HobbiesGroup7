@@ -102,25 +102,28 @@ body {
 }
 
 .bodyBackground1 {
-  position: absolute;
-  width: 1048.8px;
-  height: 654.6px;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    width: 1048.8px;
+    height: 654.6px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 .bodyBackground2 {
-  position: absolute;
-  width: 1048.8px;
-  height: 654.6px;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    width: 1048.8px;
+    height: 654.6px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 .bodyBackground3 {
-  position: absolute;
-  width: 1048.8px;
-  height: 654.6px;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    width: 1048.8px;
+    height: 654.6px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 
